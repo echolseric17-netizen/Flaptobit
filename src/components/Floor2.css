@@ -1,0 +1,351 @@
+.floor2-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  animation: slideIn 0.5s ease-out;
+}
+
+/* Header */
+.floor2-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.floor2-header h1 {
+  font-size: 2.5rem;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.floor2-header p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.btn-post-role {
+  margin: 0 auto;
+  padding: 0.8rem 2rem;
+  background: var(--gradient-primary);
+  border: none;
+  color: var(--bg-primary);
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.btn-post-role:hover {
+  box-shadow: 0 0 25px rgba(0, 212, 255, 0.6);
+  transform: translateY(-3px);
+}
+
+/* Role Form */
+.role-form-section {
+  background: var(--bg-secondary);
+  border: 2px solid var(--primary-accent);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.role-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.role-form h2 {
+  color: var(--primary-accent);
+  text-align: center;
+}
+
+.role-form input,
+.role-form select {
+  padding: 0.75rem 1rem;
+  background: var(--bg-tertiary);
+  border: 2px solid var(--border-color);
+  color: var(--text-primary);
+  border-radius: 4px;
+  font-family: 'Rajdhani', monospace;
+  transition: all var(--transition-fast);
+}
+
+.role-form input:focus,
+.role-form select:focus {
+  outline: none;
+  border-color: var(--primary-accent);
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+}
+
+.form-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn-submit {
+  flex: 1;
+  padding: 0.8rem 1.5rem;
+  background: var(--success-color);
+  border: none;
+  color: var(--bg-primary);
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-transform: uppercase;
+}
+
+.btn-submit:hover {
+  box-shadow: 0 0 15px rgba(0, 255, 65, 0.5);
+  transform: translateY(-2px);
+}
+
+.btn-cancel {
+  flex: 1;
+  padding: 0.8rem 1.5rem;
+  background: transparent;
+  border: 2px solid var(--secondary-accent);
+  color: var(--secondary-accent);
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-transform: uppercase;
+}
+
+.btn-cancel:hover {
+  background: var(--secondary-accent);
+  color: var(--bg-primary);
+}
+
+/* Roles Section */
+.roles-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.roles-section h2 {
+  color: var(--primary-accent);
+  font-size: 1.8rem;
+}
+
+.roles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.role-card {
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.role-card:hover {
+  border-color: var(--primary-accent);
+  box-shadow: 0 0 25px rgba(0, 212, 255, 0.3);
+  transform: translateY(-6px);
+}
+
+.role-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.role-header h3 {
+  margin: 0 0 0.3rem 0;
+  color: var(--text-primary);
+  font-size: 1.2rem;
+}
+
+.company {
+  color: var(--primary-accent);
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.urgency-badge {
+  padding: 0.4rem 0.8rem;
+  border: 2px solid;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  min-width: 80px;
+  color: inherit;
+}
+
+.role-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  background: var(--bg-tertiary);
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.detail .label {
+  color: var(--text-secondary);
+}
+
+.detail .value {
+  color: var(--primary-accent);
+  font-weight: 600;
+}
+
+.btn-view-candidates {
+  padding: 0.6rem 1rem;
+  background: var(--gradient-primary);
+  border: none;
+  color: var(--bg-primary);
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.btn-view-candidates:hover {
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.6);
+  transform: translateY(-2px);
+}
+
+/* Benefits Section */
+.benefits-section h2 {
+  color: var(--primary-accent);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.benefit-card {
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.benefit-card:hover {
+  border-color: var(--primary-accent);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
+  transform: translateY(-4px);
+}
+
+.benefit-icon {
+  font-size: 2.5rem;
+}
+
+.benefit-card h3 {
+  color: var(--primary-accent);
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.benefit-card p {
+  color: var(--text-secondary);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Pricing Section */
+.pricing-section {
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.pricing-section h2 {
+  color: var(--primary-accent);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.pricing-card {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.pricing-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.pricing-item .price {
+  color: var(--primary-accent);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.pricing-divider {
+  height: 2px;
+  background: var(--primary-accent);
+  margin: 1rem 0;
+  opacity: 0.3;
+}
+
+.pricing-item.highlight {
+  border: none;
+  padding: 1rem 0;
+}
+
+.pricing-item.highlight .price {
+  color: var(--success-color);
+  font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+  .floor2-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .roles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}
