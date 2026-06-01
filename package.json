@@ -1,0 +1,41 @@
+{
+  "name": "flaptobit",
+  "version": "1.0.0",
+  "description": "AI-Automated Hiring Protocol for Crypto, Powered by the $FLAP Token",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server.js",
+    "client": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy-contracts": "hardhat run scripts/deploy.js --network sepolia",
+    "test-contracts": "hardhat test",
+    "lint": "eslint src/ agents/ --ext .js,.jsx"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "express": "^4.18.2",
+    "ethers": "^6.7.1",
+    "web3": "^1.10.0",
+    "axios": "^1.4.0",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2",
+    "nodemon": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "vite": "^4.4.9",
+    "hardhat": "^2.17.0",
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "concurrently": "^8.2.0",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.32.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
